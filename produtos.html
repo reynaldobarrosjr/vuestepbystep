@@ -1,26 +1,54 @@
 <html>
 	<head>
 		<title>Armazem Paraíba - Loja</title>
+
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      	<!--Import materialize.css-->
+      	<link type="text/css" rel="stylesheet" href="./dist/css/materialize.min.css"  media="screen,projection"/>
+
+      	<!--Let browser know website is optimized for mobile-->
+      	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
 	<body>
-		<div id="root">
-			
-			<li v-for="currentName in produtos">
-		{{currentName.name}}				
 
-			</li>
+
+
+		<div id="root">
+				<div class="row">
+			      <div v-for="currentName in produtos" class="col s12 m4">
+			         <div class="card sticky-action">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      	<!-- bind an attribute -->
+								<img v-bind:src="currentName.imageSrc">
+						    </div>
+						    <div class="card-content">
+						      <span class="card-title activator grey-text text-darken-4"> {{currentName.name}}<i class="material-icons right">more_vert</i></span>
+						      <p><a href="#">This is a link</a></p>
+						    </div>
+						    <div class="card-reveal">
+						      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+						      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+						    </div>
+					</div>
+			      </div>
+			    </div>		
 		</div>	
 	</body>
+
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./dist/js/materialize.min.js"></script>
+
 	<script type="text/javascript">
 		var App = new Vue({
 		  el: "#root",
 		  data: {
 		  	produtos:[
-		  		{name: "COLCHAO KING BEST CASAL 30CMX188CMX138CM ANJOS"},
-		  		{name: "Gabriel"},
-		  		{name: "Albert"},
-		  		{name: "Doe"},
+		  		{name: "COLCHAO KING BEST CASAL 30CMX188CMX138CM ANJOS", imageSrc:"https://mamry.azureedge.net/mamry-images/021487/021487-01.jpg"},
+		  		{name: "BARBEADOR ELETRICO AQUATOUCH AT610-14 PRETO PHILIPS", imageSrc:"https://mamry.azureedge.net/mamry-images/022369/022369-01.jpg"},
+		  		{name: "FRITADEIRA SEM OLEO AIR FRYER AF-03 PRETO/PRATA MONDIAL 28 CM", imageSrc:"https://mamry.azureedge.net/mamry-images/023792/023792-01.jpg"},
+		  		
 		  	]
 		  }
 		});

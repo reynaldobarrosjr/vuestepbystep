@@ -1,0 +1,25 @@
+{
+  "name": "tutorialvue",
+  "version": "1.0.0",
+  "description": "Tutorial do vue kindle ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trevobr/vuestepbystep.git"
+  },
+  "keywords": [
+    "vuejs"
+  ],
+  "author": "Reynaldo Barros Jr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trevobr/vuestepbystep/issues"
+  },
+  "homepage": "https://github.com/trevobr/vuestepbystep#readme",
+  "dependencies": {
+    "materialize-css": "^0.100.2"
+  }
+}
