@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Vue Js Hello World</title>
+	</head>
+	<body>
+		<div id="root">
+			
+			<li v-for="currentName in names">
+		{{currentName.name}}				
+
+			</li>
+		</div>	
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script type="text/javascript">
+		var App = new Vue({
+		  el: "#root",
+		  data: {
+		  	names:[
+		  		{name: "John"},
+		  		{name: "Gabriel"},
+		  		{name: "Albert"},
+		  		{name: "Doe"},
+		  	]
+		  }
+		});
+	</script>
+<html>

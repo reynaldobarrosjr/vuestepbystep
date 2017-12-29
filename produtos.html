@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Armazem Paraíba - Loja</title>
+	</head>
+	<body>
+		<div id="root">
+			
+			<li v-for="currentName in produtos">
+		{{currentName.name}}				
+
+			</li>
+		</div>	
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script type="text/javascript">
+		var App = new Vue({
+		  el: "#root",
+		  data: {
+		  	produtos:[
+		  		{name: "COLCHAO KING BEST CASAL 30CMX188CMX138CM ANJOS"},
+		  		{name: "Gabriel"},
+		  		{name: "Albert"},
+		  		{name: "Doe"},
+		  	]
+		  }
+		});
+	</script>
+<html>
